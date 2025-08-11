@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <title>San Diego Top Spots</title>
+     <link rel="stylesheet" href="styles.css">
+     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX3HGwrGi0vIADwQYYrLKRt28tNDtNc3s"></script>
+    <!--signed up for a temporary google maps API, when it runs out, the maps will not work-->
+    <!--will need new API key after the key= -->
 </head>
 
 <body>
     <!-- Write your markup here -->
+  <h1>San Diego Top Spots</h1>
 
+    <table id="spots-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Distance (miles, needs browser GPS input to work)</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="map"></div>
+
+    
     <!-- Don't forget to add your <script> tag here -->
+        <script src="main.js"></script>
 </body>
 
 </html>
